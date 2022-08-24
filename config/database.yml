@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dev_development
+  pool: 5
+  username: postgres
+  password: renata123
+  host: localhost
