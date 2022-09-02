@@ -1,6 +1,6 @@
-#Devcamp Portofolio From Gabriel
+# Devcamp Portofolio From Gabriel
 
-> I'm using this app in oder to learn more about ruby on rails and it's features.
+> I'm using this app in order to learn more about ruby on rails and it's features.
 
 ### Features
 
