@@ -4,18 +4,20 @@
 
 ### Features
 
-- Real Time chat Engine
+- Real Time Chat Engine
 - Blog 
 - Portolio
 - Drag anf Drop interface 
 
 ### Code Example
 
+
 ```ruby
 def gabriel_is_learning
     puts "That's Damn Righht"
 end
 ```
+
 
 ```javascript
 alert('All recruiters out there');
