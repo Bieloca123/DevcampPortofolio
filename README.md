@@ -1,24 +1,24 @@
-# README
+# Devcamp Portofolio From Gabriel
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> I'm using this app in order to learn more about ruby on rails and it's features.
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+- Real Time Chat Engine
+- Blog 
+- Portolio
+- Drag anf Drop interface 
 
-* System dependencies
+### Code Example
 
-* Configuration
 
-* Database creation
+```ruby
+def gabriel_is_learning
+    puts "That's Damn Righht"
+end
+```
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+alert('All recruiters out there');
+```
