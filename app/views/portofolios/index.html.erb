@@ -10,4 +10,5 @@
   <p> <%= image_tag portofolio_item.thumb_image if portofolio_item.thumb_image.present? %></p>
 
   <p> <%= link_to "Edit", edit_portofolio_path(portofolio_item) %></p>
+  <p> <%= link_to "Delete", portofolio_item, method: :delete, data: { confirm: 'U sure deleting it, you punk ?' }%> </p>
 <% end %>
