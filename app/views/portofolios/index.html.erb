@@ -1,0 +1,14 @@
+<h1> Portofolio Index </h1>
+
+<%= link_to "Create New Portofolio", new_portofolio_path %>
+
+<% @portofolio_items.each do |portofolio_item| %>
+
+  <p> <%= link_to portofolio_item.title, portofolio_show_path(portofolio_item) %></p>
+  <p> <%= portofolio_item.subtitle %></p>
+  <p> <%= portofolio_item.body %></p>
+  <p> <%= image_tag portofolio_item.thumb_image if portofolio_item.thumb_image.present? %></p>
+
+  <p> <%= link_to "Edit", edit_portofolio_path(portofolio_item) %></p>
+  <p> <%= link_to "Delete", portofolio_item, method: :delete, data: { confirm: 'U sure deleting it, you punk ?' }%> </p>
+<% end %>
