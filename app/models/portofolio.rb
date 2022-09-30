@@ -6,11 +6,12 @@ class Portofolio < ApplicationRecord
 
   #relationships
   has_many :technologies
+  accepts_nested_attributes_for :technologies,
 
   #scopes
   scope :ruby_on_rails_portofolio_items, -> { where(subtitle: 'Ruby on Rails') }
   
-  after_initialize :set_defaults 
+  after_initialize :set_defaults
 
   def set_defaults
     self.main_image  ||= Placeholder.image_generator(height: 600, width: 400)
