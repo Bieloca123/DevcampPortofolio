@@ -1,16 +1,19 @@
+
+#frozen_string_literal: true
 class Portofolio < ApplicationRecord
   include Placeholder
 
-  #validations
+  # validations
   validates_presence_of :title, :body, :main_image, :thumb_image
 
-  #relationships
+  # relationships
   has_many :technologies
-  accepts_nested_attributes_for :technologies,
+  accepts_nested_attributes_for :technologies, 
+                                reject_if: lambda { |attrs| attrs ['name'].blank? }
 
-  #scopes
+  # scopes
   scope :ruby_on_rails_portofolio_items, -> { where(subtitle: 'Ruby on Rails') }
-  
+
   after_initialize :set_defaults
 
   def set_defaults
