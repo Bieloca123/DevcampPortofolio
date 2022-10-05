@@ -1,7 +1,13 @@
-<p> <%= image_tag @portofolio_item.main_image if @portofolio_item.main_image.present? %> </p>
+<%= image_tag @portofolio_item.main_image if @portofolio_item.main_image.present? %>
 
 <h1> <%= @portofolio_item.title %>    </h1>
 
 <em> <%= @portofolio_item.subtitle %> </em>
 
 <p> <%= @portofolio_item.body %>  </p>
+
+<h2> Technologies Used: </h2>
+
+<% @portofolio_item.technologies.each do |t| %>
+  <p><%= t.name %></p>
+<% end %>
