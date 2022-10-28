@@ -7,7 +7,7 @@
 - Real Time Chat Engine
 - Blog 
 - Portolio
-- Drag anf Drop interface 
+- Drag and Drop interface 
 
 ### Code Example
 
